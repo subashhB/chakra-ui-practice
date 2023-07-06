@@ -5,10 +5,10 @@ import { Grid, GridItem } from "@chakra-ui/react";
 export default function RootLayout() {
   return (
     <Grid templateColumns="repeat(6, 1fr)" bg="gray.50">
-      <GridItem colSpan="1" p="30px" as="aside" bg="purple.400" minHeight="100vh">
+      <GridItem colSpan={{ base: 6, lg: 2, xl: 1 }} p={{ base: "20px", lg: "30px" }} as="aside" bg="purple.400" minHeight={{ lg: "100vh"}}>
         <span>Side Bar</span>
       </GridItem>
-      <GridItem as="main" p="40px" colSpan={5}>
+      <GridItem as="main" p="40px" colSpan={{ base: 6, lg: 4, xl: 5 }}>
         <Navbar />
         <Outlet />
       </GridItem>
