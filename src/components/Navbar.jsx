@@ -10,7 +10,7 @@ import {
 
 const Navbar = () => {
   return (
-    <Flex as="nav" p="10px" alignItems="center">
+    <Flex as="nav" p="10px" alignItems="center" marginBottom="40px">
       <Heading as="h1">Dojo Tasks</Heading>
       <Spacer />
       <HStack spacing="20px">
