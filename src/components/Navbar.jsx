@@ -1,4 +1,6 @@
 import {
+  Avatar,
+    AvatarBadge,
     Box,
     Button,
     Flex,
@@ -28,9 +30,11 @@ const Navbar = () => {
       <Heading as="h1">Dojo Tasks</Heading>
       <Spacer />
       <HStack spacing="20px">
-        <Box bg="gray.200" p="10px">
-          M
-        </Box>
+        <Avatar name="mario" bg="purple" src="/img/mario.png">
+          <AvatarBadge width="1.3em" bg="teal.500">
+            <Text fontSize="xs" color="white">3</Text>
+          </AvatarBadge>
+        </Avatar>
         <Text>mario@gmail.com</Text>
         <Button colorScheme="purple" onClick={showToast} >Log Out</Button>
       </HStack>
